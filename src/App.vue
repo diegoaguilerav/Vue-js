@@ -10,7 +10,7 @@
     <div class="componentes">
       <Bienvenidos v-show="bienvenido"/>
       <Propuesta v-show="nuestra_propuesta"/>
-      <Venta v-show="lo_que_vendemos"/>
+      <Venta url="../assets/completo.jpg" v-show="lo_que_vendemos"/>
       <QuienesSomos v-show="quienes_somos"/>
     </div>
   </div>
@@ -37,7 +37,7 @@ export default {
       lo_que_vendemos: false,
       quienes_somos: false,
       todos: false,
-    };
+    }
   },
   methods: {
     mostrar_todos: function () {
@@ -52,8 +52,8 @@ export default {
         this.lo_que_vendemos = false;
         this.quienes_somos = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

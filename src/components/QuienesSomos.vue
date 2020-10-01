@@ -16,7 +16,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 80%;
-  background-color: yellow;
+  background-color: cornflowerblue;
   border: 1px solid grey;
   border-radius: 30px;
   margin-top: 20px;

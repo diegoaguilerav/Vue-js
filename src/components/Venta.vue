@@ -1,6 +1,6 @@
 <template>
   <div class="estilo">
-    <img src="../assets/completo.jpg" height="400" />
+    <img src="../assets/completo.jpg" v-bind:style="estilo" />
   </div>
 </template>
 
@@ -9,7 +9,10 @@ export default {
   name: "Venta",
   data:function() {
     return {
-      //articulo_en_venta: '../assets/completo.jpg'
+      //articulo: '../assets/completo.jpg',
+      estilo:{
+        height: '400px'
+      }
     }
   }
 };
